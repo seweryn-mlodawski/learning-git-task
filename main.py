@@ -18,3 +18,6 @@
 #    
 #print(f"\nŁącznie kupię {total_products} produktów.")
 #A tu dodałem komentarz na nowej gałęzi
+
+print(f"\nWybacz Mentorze że commity po polsku, ale pomogło mi to w zrozumieniu mechanizmu działania gita.\n")
+print(" / Mentor Maciek jest DeBest! :)" *300)
