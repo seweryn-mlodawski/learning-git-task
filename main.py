@@ -17,3 +17,4 @@ for store, items in kaufen_list.items():
     print(f"Gdy będę w {store_L}, kupię: {items_L}")
     
 print(f"\nŁącznie kupię {total_products} produktów.")
+#A tu dodałem komentarz na nowej gałęzi
