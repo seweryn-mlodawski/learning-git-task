@@ -13,3 +13,7 @@ for store, items in kaufen_list.items():
     store_L = store.capitalize()
     items_L = [zakupy.capitalize() for zakupy in items]
     total_products += len(items)
+
+    print(f"Gdy będę w {store_L}, kupię: {items_L}")
+    
+print(f"\nŁącznie kupię {total_products} produktów.")
