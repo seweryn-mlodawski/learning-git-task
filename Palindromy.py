@@ -4,7 +4,8 @@
 #na razie to slowo bedzie wpiswywane na sztywno w kodzie
 word = "Alejaja"
 reversed_word = word[::-1] #odwracamy slowo
-print(reversed_word)
+print(f"Słowo: {word}")
+print(f"Odwrócone słowo: {reversed_word}")
 
 def is_palindrome(word):
     new_word = "" # tutaj bedziemy trzymac slowo
@@ -13,3 +14,5 @@ def is_palindrome(word):
             new_word += char
     reversed_word = new_word[::-1] #odwracamy slowo
     return new_word == reversed_word
+# testujemy funkcje
+test_words = ["Kajak", "A to kanapa pana Kota", "Python", "Anna", "Kobyła ma mały bok!", "To nie jest palindrom"]
