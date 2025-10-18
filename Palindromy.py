@@ -2,11 +2,6 @@
 #plan:
 #1. funkcja sprawdzajaca czy slowo jest palindromem
 #na razie to slowo bedzie wpiswywane na sztywno w kodzie
-word = "Alejaja"
-reversed_word = word[::-1] #odwracamy slowo
-print(f"Słowo: {word}")
-print(f"Odwrócone słowo: {reversed_word}")
-
 
 test_words = [
     "Kajak",
