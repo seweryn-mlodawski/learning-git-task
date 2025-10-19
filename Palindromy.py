@@ -17,7 +17,7 @@ def is_palindrome(word):
     for char in word: # przechodzimy przez każdą literę w słowie
         if char.isalnum(): #sprawdzamy czy znak jest alfanumeryczny (litera lub cyfra)
             new_word += char.lower()  # zamiana na małe litery, by "A" i "a" były równe
-    reversed_word = new_word[::-1] #odwracamy słowo
+    reversed_word = new_word[::-1] #odwracamy słowo (zwraca TRUE albo FALSE)
     return new_word == reversed_word # porównujemy oryginalne słowo z odwróconym
 
 print("\n--- Testowanie funkcji is_palindrome ---\n")
