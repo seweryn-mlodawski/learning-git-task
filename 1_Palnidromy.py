@@ -13,16 +13,14 @@ test_words = [
 ]
 print(f"\nTestowane słowa to: {test_words}")
 def is_palindrome(word):
-cars = ['Ford', 'BMW', 'Volvo']
-cars.sort()
-print(cars)"""
-Funkcja sprawdza, czy tekst jest palindromem,
-ignoruje wielkość liter oraz znaki niebędące literami/cyframi.
-Argumenty:
-    word (str): tekst do sprawdzenia (może zawierać spacje, interpunkcję, cyfry)
-Zwraca:
-    bool: TRUE jeśli tekst jest palindromem, FALSE jeśli nie jest
-"""
+    """
+    Funkcja sprawdza, czy tekst jest palindromem,
+    ignoruje wielkość liter oraz znaki niebędące literami/cyframi.
+    Argumenty:
+        word (str): tekst do sprawdzenia (może zawierać spacje, interpunkcję, cyfry)
+    Zwraca:
+        bool: TRUE jeśli tekst jest palindromem, FALSE jeśli nie jest
+    """
     new_word = ""                       #tu będziemy składać słowo
     for char in word:                   # przechodzimy przez każdą literę w słowie
         if char.isalnum():              #sprawdzamy czy znak jest alfanumeryczny (litera lub cyfra) - dzięki temu zignorujemy wykrzykniki, spacje itp.
@@ -31,8 +29,8 @@ Zwraca:
     return new_word == reversed_word    # porównujemy oryginalne słowo z odwróconym
 
 print("\n--- Testowanie funkcji is_palindrome ---\n")
-for test_word in test_words:
-    if is_palindrome(test_word):
+for test_word in test_words:            #iterujemy przez testowane słowa
+    if is_palindrome(test_word):        #wywołujemy funkcję i sprawdzamy wynik
         print(f'"{test_word}" jest palindromem.\n')
     else:
-        print(f'"{test_word}" nie jest palindromem.\n')
+        print(f'"{test_word}" NIE jest palindromem.\n')
